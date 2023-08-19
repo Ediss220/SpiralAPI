@@ -118,8 +118,7 @@ it('response time test', async function() {
 it('should handle rate limiting', async function() {
   this.timeout(5000);
   try {
-    // Send a burst of requests in a loop to trigger rate limiting
-    for (let i = 0; i < 120; i++) {
+     for (let i = 0; i < 120; i++) {
       await axios.get(BaseURL);
     }
   } catch (error) {
